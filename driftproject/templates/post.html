@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<body>
+    <h2 style="text-align:center">Drift Event Singup</h2>
+    <p style="text-align:center">Here is the days and prices for the event.</p>
+    
+    <div class="columns">
+      <ul class="price">
+        <li class="header">1 Day Pass</li>
+        <li class="grey">$ 60.00</li>
+        <li>Friday</li>
+        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+      </ul>
+    </div>
+    
+    <div class="columns">
+      <ul class="price">
+        <li class="header" style="background-color:rgba(42, 161, 197, 0.5)">2 Day Pass</li>
+        <li class="grey">$ 100.00</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+      </ul>
+    </div>
+    
+    <div class="columns">
+      <ul class="price">
+        <li class="header">3 Day Pass</li>
+        <li class="grey">$ 150.00</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+        <li>Sunday</li>
+        <li class="grey"><a href="{{ url_for('check') }}" class="button">Sign Up</a></li>
+      </ul>
+    </div>
+    </body>
+    </html>
+
+{% endblock content %}

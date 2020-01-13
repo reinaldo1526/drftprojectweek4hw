@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h1>Signup For Our Next Drift Events</h1>
+
+<form action="" method="POST">
+    {{ signupform.hidden_tag() }}
+    <div>
+        <fieldset>
+            {{ signupform.username.label }}
+            {{ signupform.username(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{ signupform.password.label }}
+            {{ signupform.password(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{ signupform.driftcar.label }}
+            {{ signupform.driftcar(class="form-control") }}
+        </fieldset>
+        <fieldset>
+            {{signupform.phonenumber.label }}
+            {{signupform.phonenumber(class="form-control") }}
+        </fieldset>
+        {{signupform.submit(class="button") }}
+    </div>
+</form>
+
+{% endblock content %}
